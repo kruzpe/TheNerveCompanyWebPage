@@ -1,11 +1,21 @@
 jQuery(document).ready(function($) {
+'use strict';
 
-	'use strict';
+// esta funcion esconde el video principal depues de 6 segundos
+setTimeout(function() {
+$(".video_container").fadeOut(500);},6000);
+
+// esta funcion presenta el body_page despues de 6 segundos
+setTimeout(function() {
+			$(".web_page").css({ display: "block" });},6500);
+
+			setTimeout(function() {
+						$("canvas").css({ display: "block" });},6500);
 
       var owl = $("#owl-testimonials");
 
         owl.owlCarousel({
-          
+
           pagination : true,
           paginationNumbers: false,
           autoPlay: 6000, //Set AutoPlay to 3 seconds
@@ -14,7 +24,7 @@ jQuery(document).ready(function($) {
           itemsDesktopSmall : [900,1], // betweem 900px and 601px
           itemsTablet: [600,1], //2 items between 600 and 0
           itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
-          
+
       });
 
 
@@ -30,7 +40,7 @@ jQuery(document).ready(function($) {
         $('.counter').each(function() {
           var $this = $(this),
               countTo = $this.attr('data-count');
-          
+
           $({ countNum: $this.text()}).animate({
             countNum: countTo
           },
@@ -47,8 +57,8 @@ jQuery(document).ready(function($) {
               //alert('finished');
             }
 
-          });  
-          
+          });
+
         });
 
 
@@ -64,14 +74,14 @@ jQuery(document).ready(function($) {
         $this.addClass('active');
         $(tabgroup).children('div').hide();
         $(target).show();
-      
+
         })
 
 
 
         $(".pop-button").click(function () {
             $(".pop").fadeIn(300);
-            
+
         });
 
         $(".pop > span").click(function () {
