@@ -38,7 +38,6 @@ p {
   border-radius: 15px;
   padding: 5px;
   margin-top: 10px;
-  box-shadow: rgb(1, 148, 81);
 }
 .primary-white-button a {     /* este boton se quedo oculto con las particulas*/
 	display: inline-block;
