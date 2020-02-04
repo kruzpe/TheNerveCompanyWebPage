@@ -38,7 +38,7 @@ p {
   border-radius: 15px;
   padding: 5px;
   margin-top: 10px;
-  box-shadow: rgb(1, 148, 81);
+  box-shadow: ;
 }
 .primary-white-button a {     /* este boton se quedo oculto con las particulas*/
 	display: inline-block;
@@ -344,7 +344,6 @@ background-color: rgba(0, 0, 0);
 
 #portoflio .page-section {
 	padding: 0px;
-
 }
 
 #portfolio .section-heading {
@@ -372,7 +371,7 @@ background-color: rgba(0, 0, 0);
 #portfolio .section-heading .line-dec {
 	width: 270px;
 	height: 1px;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgb(232, 20, 20);
 	margin: 20px 0px 15px 0px;
 }
 
